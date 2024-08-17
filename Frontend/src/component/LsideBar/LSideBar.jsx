@@ -79,7 +79,7 @@ const LSideBar = () => {
 
         </div> 
 
-          <Link to="/post"  className='w-[15vw] font-bold bg-[#F91980] hover:bg-pink-600 text-center p-3 rounded-3xl text-white cursor-pointer'>
+          <Link className='w-[15vw] font-bold bg-[#F91980] hover:bg-pink-600 text-center p-3 rounded-3xl text-white cursor-pointer'>
             Post
           </Link>
     </div>
