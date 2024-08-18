@@ -28,7 +28,7 @@ app.use(cookieParser())
 
 const corsOption = {
     // origin : "http://localhost:5173",
-    origin : "https://twitterclone-4-xdbk.onrender.com",
+    origin : process.env.URL,
     credentials : true
 }
 
