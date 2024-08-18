@@ -1,6 +1,10 @@
 import dotenv from "dotenv"
 import jwt from "jsonwebtoken"
 
+dotenv.config({
+    path:"../config/.env"
+})
+
 
 export const isAuthenticated = async (req, res, next)=>{
 
@@ -13,9 +17,9 @@ export const isAuthenticated = async (req, res, next)=>{
                 success : false
             })
         }
-        const decode = await jwt.verify(token, process.env.TOKEN_SECRET)
+        const decode =  jwt.verify(token, process.env.TOKEN_SECRET)
         
-        req.user = decode.id
+        req.user = decode.userid
         next()
         
     } 
